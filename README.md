@@ -1,4 +1,4 @@
-# IRIS CLASSIFICATION – Spark App
+# Spark App - Iris Data Classificatio
 
 This project performs classification on the Iris dataset using Apache Spark.
 
