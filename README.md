@@ -13,8 +13,6 @@ Ensure the script `run-app` is executable. Then run:
 
 > Make sure your local environment has Spark installed and configured.
 
----
-
 ## Run App on the LAMSADE Cluster
 
 ### Step 1 – Upload the Iris Data Folder to Your Cluster Workspace
