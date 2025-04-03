@@ -1,7 +1,6 @@
-# Spark App - Iris Data Classificatio
+# Spark App - Iris Data Classification
 
-This project performs classification on the Iris dataset using Apache Spark.
-
+This project demonstrates Iris dataset classification with Apache Spark and provides a practical guide to running Spark applications on a cluster.
 
 ## Run App Locally
 First, package the application
