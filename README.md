@@ -3,11 +3,8 @@
 This project demonstrates Iris dataset classification with Apache Spark and provides a practical guide to running Spark applications on a cluster.
 
 ## Set up the App
-Clone or download this Git [repository](https://github.com/osekoo/spark-iris) to your local machine.  
-Navigate inside spark-iris:
-```
-cd spark-iris
-```
+- Clone or download this Git [repository](https://github.com/osekoo/spark-iris) to your local machine.  
+Open your project with your favorite IDE (IntelliJ, VS Code, etc.)
 Then, explore the main application file:
 ```
 src/main/scala/MainApp.scala
