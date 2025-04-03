@@ -2,6 +2,17 @@
 
 This project demonstrates Iris dataset classification with Apache Spark and provides a practical guide to running Spark applications on a cluster.
 
+## Set up the App
+Clone or download this Git [repository](https://github.com/osekoo/spark-iris) to your local machine.  
+Navigate inside spark-iris:
+```
+cd spark-iris
+```
+Then, explore the main application file:
+```
+src/main/scala/MainApp.scala
+```
+
 ## Run App Locally
 First, package the application
 ```
@@ -24,7 +35,7 @@ It will look something like:
 ```
 id_123_<your_username>.key
 ```
-> If you encounter permission issue (SSH will reject your key if it is too visible to others)
+If you encounter permission issue (SSH will reject your key if it is too visible to others):  
 **On Linux/macOS**
 ```bash
 chmod 600 <your_account_key>
