@@ -98,12 +98,12 @@ spark-submit \
     --num-executors 1 \
     --class "MainApp" \
     iris_2.12-0.1.jar \
-    data/Iris.csv \
-    output
+    /students/p6emiasd2025/<your_username>/data/Iris.csv \
+    /students/p6emiasd2025/<your_username>/output
 ```
 
-> `data/Iris.csv` is the HDFS path  
-> `output` is the HDFS output folder (will be created if it doesn't exist)
+> `/students/p6emiasd2025/<your_username>/data/Iris.csv` is the HDFS path  
+> `/students/p6emiasd2025/<your_username>/output` is the HDFS output folder (will be created if it doesn't exist)
 
 
 ## Notes
