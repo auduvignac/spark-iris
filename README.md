@@ -21,7 +21,14 @@ sbt package
 
 Then, run the application:
 
+For Windows user:
 ```bash
+./run-app.bat
+```
+
+For Linux/MacOS
+```bash
+chmod +x ./run-app.sh
 ./run-app
 ```
 
@@ -38,7 +45,7 @@ id_123_<your_username>.key
 If you encounter permission issue (SSH will reject your key if it is too visible to others):  
 **On Linux/macOS**
 ```bash
-chmod 600 <your_account_key>
+chmod 600 <your_key>
 ```
 **On Windows**
 - Right-click on the key file → Properties → Security tab
@@ -46,19 +53,28 @@ chmod 600 <your_account_key>
 - Make sure **only your user** has Full Control
 
 ### Step 2 – Upload the Iris Data Folder to Your Cluster Workspace
+First, connect to the LAMSADE cluster:
 
-From your local machine:
+```bash
+ssh -p 5022 -i <your_key> <your_username>@ssh.lamsade.dauphine.fr
+```
+
+Then, create your workspace on remote machine
+```bash
+mkdir -p ~/workspace/data
+```
+
+Now, from your local machine:
 ```bash
 scp -P 5022 -i <your_key> -r data <your_username>@ssh.lamsade.dauphine.fr:~/workspace
 ```
-
 
 ### Step 3 – Copy Data to HDFS (on the remote server)
 
 ```bash
 cd ~/workspace
-hdfs dfs -mkdir -p data
-hdfs dfs -put data/* data/
+hdfs dfs -mkdir -p /students/p6emiasd2025/<your_username>/data
+hdfs dfs -put data/* /students/p6emiasd2025/<your_username>/data
 ```
 
 ### Step 4 – Upload the Iris App JAR to Your Workspace
