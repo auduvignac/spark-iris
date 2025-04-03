@@ -67,7 +67,12 @@ scp -P 5022 -i <your_key> -r data <your_username>@ssh.lamsade.dauphine.fr:~/work
 ```
 
 ### Step 3 – Copy Data to HDFS (on the remote server)
+First, connect to the LAMSADE cluster:
 
+```bash
+ssh -p 5022 -i <your_key> <your_username>@ssh.lamsade.dauphine.fr
+```
+Then, upload the data to hdfs:
 ```bash
 cd ~/workspace
 hdfs dfs -mkdir -p /students/p6emiasd2025/<your_username>/data
